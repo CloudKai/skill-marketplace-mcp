@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.vercel/
+.cache/
+*.tmp
+.vercel
+# Local editor settings, caches, generated files and logs.
+.vscode/
+.idea/
+.DS_Store
+coverage/
+.nyc_output/
+output/
+outputs/
+*.log
+*.tsbuildinfo

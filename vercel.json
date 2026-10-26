@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "express",
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "functions": { "index.mjs": { "maxDuration": 300 } }
+}

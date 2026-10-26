@@ -1,0 +1,33 @@
+{
+  "name": "skill-marketplace-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Local read-only MCP discovery for public agent skills.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node --env-file-if-exists=.env.local dist/stdio.js",
+    "http": "node --env-file-if-exists=.env.local dist/http.js",
+    "dev": "npm run build && npm run http",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "setup:vercel": "vercel link",
+    "auth:refresh": "vercel env pull .env.local"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "express": "^5.1.0",
+    "yaml": "^2.8.0",
+    "zod": "^4.6.7",
+    "@vercel/oidc": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0",
+    "vercel": "^65.2.0"
+  }
+}

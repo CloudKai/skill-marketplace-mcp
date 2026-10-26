@@ -1,0 +1,16 @@
+.git
+.vercel
+.env*
+node_modules
+dist
+.cache
+test
+*.log
+VERIFICATION.md
+
+README.md
+CHANGELOG.md
+docs
+
+.github
+CONTRIBUTING.md
